@@ -3,8 +3,9 @@ function validate(input, level) {
     const flag = generateFlag(input, level);
     document.getElementById("result").innerText =
       `✅ Correct!\nFLAG: ${flag}`;
+
+    document.getElementById("nextBtn").style.display = "inline-block";
     currentLevel++;
-    setTimeout(loadLevel, 1500);
   } else {
     document.getElementById("result").innerText = "❌ Incorrect";
   }

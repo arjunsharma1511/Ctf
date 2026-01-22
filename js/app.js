@@ -12,4 +12,10 @@ function submitAnswer() {
   validate(input, currentLevel);
 }
 
+function nextLevel() {
+  document.getElementById("nextBtn").style.display = "none";
+  document.getElementById("userInput").value = "";
+  loadLevel();
+}
+
 loadLevel();
